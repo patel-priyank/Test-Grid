@@ -27,13 +27,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .photo img {
-  height: 100%;
-  width: 30%;
+  height: 0;
+  width: 0;
   object-fit: cover;
-  border-radius: 12px;
 }
 
 .container .about {
