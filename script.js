@@ -1,10 +1,13 @@
+const defaultHeight = window.getComputedStyle(document.documentElement).getPropertyValue('--default-height');
+const defaultWidth = window.getComputedStyle(document.documentElement).getPropertyValue('--default-width');
+
 const photo = document.querySelector('.photo');
 const image = photo.querySelector('img');
 const about = document.querySelector('.about');
 
 const updatePhotoHeight = () => {
-  image.style.height = '0';
-  image.style.width = '0';
+  image.style.height = defaultHeight;
+  image.style.width = defaultWidth;
 
   photo.style.maxHeight = about.clientHeight + 'px';
 

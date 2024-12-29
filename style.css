@@ -1,3 +1,8 @@
+:root {
+  --default-height: 0;
+  --default-width: 0;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -32,8 +37,8 @@ body {
 }
 
 .photo img {
-  height: 0;
-  width: 0;
+  height: var(--default-height);
+  width: var(--default-width);
   object-fit: cover;
 }
 
