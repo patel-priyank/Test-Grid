@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: whitesmoke;
+  height: 100vh;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+}
+
+.container div {
+  outline: 1px solid red;
+}
+
+.container .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo img {
+  height: 100%;
+  width: 30%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.container .about {
+  font-size: 1.25rem;
+}
+
+.about p {
+  margin: 0;
+  background-color: gray;
+}
+
+.about p:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
